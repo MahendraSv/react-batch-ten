@@ -1,8 +1,10 @@
 import React from 'react';
 
 class Label extends React.Component {
-  // props.text
-  // props.xyz
+  state = {
+    abc : 10
+  };
+
   render() {
     // destructuring
     const { text, xyz } = this.props;
@@ -13,6 +15,9 @@ class Label extends React.Component {
         }
         {
           xyz
+        }
+        {
+          this.state.abc
         }
       </div>
     );
